@@ -16,6 +16,10 @@
         "semanticCommitType": "fix"
       },
       {
+        "enabled": false,
+        "matchDepTypes": ["peerDependencies"]
+      },
+      {
         "automerge": true,
         "matchUpdateTypes": ["minor", "patch"]
       },
