@@ -52,11 +52,7 @@
     {
       "automerge": true,
       "matchPackageNames": ["@3846masa/configs"],
-      "postUpgradeTasks": {
-        "commands": ["yarn install --force --ignore-engines --non-interactive --update-checksums --no-bin-links"],
-        "executionMode": "update",
-        "fileFilters": ["yarn.lock"]
-      },
+      "postUpdateOptions": ["yarnDedupeHighest"],
       "schedule": ["at any time"],
       "stabilityDays": 0
     }
