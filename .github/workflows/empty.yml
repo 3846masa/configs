@@ -1,0 +1,13 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  empty:
+    name: Empty CI
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Run empty ci for automerge"
