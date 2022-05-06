@@ -48,7 +48,30 @@
     "semanticCommits": "enabled",
     "stabilityDays": 3
   },
+  "packageRules": [
+    {
+      "automerge": true,
+      "matchPackageNames": ["@3846masa/configs"],
+      "postUpgradeTasks": {
+        "commands": ["yarn install --force --ignore-engines --non-interactive --update-checksums --no-bin-links"],
+        "executionMode": "update",
+        "fileFilters": ["yarn.lock"]
+      },
+      "schedule": ["at any time"],
+      "stabilityDays": 0
+    }
+  ],
   "rangeStrategy": "bump",
+  "regexManagers": [
+    {
+      "currentValueTemplate": "main",
+      "datasourceTemplate": "git-refs",
+      "depNameTemplate": "@3846masa/configs",
+      "fileMatch": ["^package.json$"],
+      "lookupNameTemplate": "https://github.com/3846masa/configs.git",
+      "matchStrings": ["\"@3846masa/configs\": \"github:3846masa/configs#(?<currentDigest>.*?)\""]
+    }
+  ],
   "reviewers": ["3846masa"],
   "schedule": ["after 8:00 pm"],
   "timezone": "Asia/Tokyo"
