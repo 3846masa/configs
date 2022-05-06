@@ -2,15 +2,12 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>3846masa/configs//renovate/default"],
   "npm": {
+    "automerge": true,
     "packageRules": [
       {
         "matchDepTypes": ["dependencies"],
         "semanticCommitScope": "npm",
         "semanticCommitType": "chore"
-      },
-      {
-        "automerge": true,
-        "matchUpdateTypes": ["major"]
       }
     ],
     "stabilityDays": 0

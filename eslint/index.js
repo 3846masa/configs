@@ -24,6 +24,7 @@ module.exports = {
         argsIgnorePattern: '^_',
       },
     ],
+    eqeqeq: ['error', 'always', { null: 'never' }],
     'import/order': [
       'error',
       {
@@ -33,15 +34,14 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
+    'no-undefined': ['error'],
     'sort/imports': ['off'],
     'sort/type-properties': ['error'],
     'unicorn/prefer-node-protocol': ['error'],
   },
   settings: {
     'import/resolver': {
-      node: {
-        extensions: ['.js', '.mjs', '.ts', '.jsx', '.tsx'],
-      },
+      typescript: {},
     },
   },
 };
