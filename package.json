@@ -12,7 +12,7 @@
   "dependencies": {
     "@tsconfig/strictest": "1.0.1",
     "@typescript-eslint/eslint-plugin": "5.23.0",
-    "@typescript-eslint/parser": "5.22.0",
+    "@typescript-eslint/parser": "5.23.0",
     "better-typescript-lib": "2.1.0",
     "eslint": "8.15.0",
     "eslint-config-prettier": "8.5.0",
