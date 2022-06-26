@@ -25,6 +25,7 @@ module.exports = {
       },
     ],
     eqeqeq: ['error', 'always', { null: 'never' }],
+    'import/no-named-as-default': ['off'],
     'import/no-named-as-default-member': ['off'],
     'import/order': [
       'error',
