@@ -9,6 +9,7 @@
   },
   "labels": ["dependencies"],
   "npm": {
+    "extends": ["group:monorepos"],
     "packageRules": [
       {
         "matchDepTypes": ["dependencies"],
