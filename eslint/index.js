@@ -25,6 +25,7 @@ module.exports = {
       },
     ],
     eqeqeq: ['error', 'always', { null: 'never' }],
+    'import/no-named-as-default-member': ['off'],
     'import/order': [
       'error',
       {
@@ -40,8 +41,13 @@ module.exports = {
     'unicorn/prefer-node-protocol': ['error'],
   },
   settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.cts', '.mts', '.tsx'],
+    },
     'import/resolver': {
-      typescript: {},
+      typescript: {
+        conditionNames: ['node', 'require', 'import', 'default'],
+      },
     },
   },
 };
