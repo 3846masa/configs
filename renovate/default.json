@@ -55,6 +55,17 @@
     "semanticCommits": "enabled",
     "stabilityDays": 3
   },
+  "packageRules": [
+    {
+      "commitMessageTopic": "Node.js",
+      "major": false,
+      "matchDatasources": ["docker", "node"],
+      "matchPackageNames": ["node"],
+      "matchPackagePatterns": ["/node$"],
+      "semanticCommitScope": "node",
+      "semanticCommitType": "chore"
+    }
+  ],
   "rangeStrategy": "bump",
   "reviewers": ["3846masa"],
   "schedule": ["after 8:00 pm"],
