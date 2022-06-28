@@ -1,66 +1,61 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["group:monorepos"],
+  "github-actions": {
+    "automerge": true,
+    "pinDigests": true,
+    "semanticCommitScope": "github-actions",
+    "semanticCommitType": "ci",
+    "semanticCommits": "enabled"
+  },
   "labels": ["dependencies"],
+  "npm": {
+    "extends": ["group:monorepos"],
+    "packageRules": [
+      {
+        "matchDepTypes": ["dependencies"],
+        "semanticCommitScope": "npm",
+        "semanticCommitType": "fix"
+      },
+      {
+        "enabled": false,
+        "matchDepTypes": ["peerDependencies"]
+      },
+      {
+        "automerge": true,
+        "matchUpdateTypes": ["minor", "patch"]
+      },
+      {
+        "automerge": false,
+        "matchUpdateTypes": ["major"]
+      },
+      {
+        "automerge": true,
+        "matchPackagePrefixes": ["@types/"],
+        "stabilityDays": 0
+      },
+      {
+        "enabled": false,
+        "matchPackageNames": ["@types/node"],
+        "matchUpdateTypes": ["major"]
+      },
+      {
+        "enabled": false,
+        "matchDepTypes": ["engines"]
+      },
+      {
+        "automerge": true,
+        "matchPackageNames": ["@3846masa/configs"],
+        "schedule": ["at any time"],
+        "stabilityDays": 0
+      }
+    ],
+    "postUpdateOptions": ["yarnDedupeHighest"],
+    "semanticCommitScope": "npm",
+    "semanticCommitType": "chore",
+    "semanticCommits": "enabled",
+    "stabilityDays": 3
+  },
   "packageRules": [
-    {
-      "automerge": true,
-      "matchDatasources": ["github-actions"],
-      "pinDigests": true,
-      "semanticCommitScope": "github-actions",
-      "semanticCommitType": "ci"
-    },
-    {
-      "matchDatasources": ["npm"],
-      "semanticCommitScope": "npm",
-      "semanticCommitType": "chore",
-      "stabilityDays": 3
-    },
-    {
-      "matchDatasources": ["npm"],
-      "matchDepTypes": ["dependencies"],
-      "semanticCommitScope": "npm",
-      "semanticCommitType": "fix"
-    },
-    {
-      "enabled": false,
-      "matchDatasources": ["npm"],
-      "matchDepTypes": ["peerDependencies"]
-    },
-    {
-      "automerge": true,
-      "matchDatasources": ["npm"],
-      "matchUpdateTypes": ["minor", "patch"]
-    },
-    {
-      "automerge": false,
-      "matchDatasources": ["npm"],
-      "matchUpdateTypes": ["major"]
-    },
-    {
-      "automerge": true,
-      "matchDatasources": ["npm"],
-      "matchPackagePrefixes": ["@types/"],
-      "stabilityDays": 0
-    },
-    {
-      "enabled": false,
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["@types/node"],
-      "matchUpdateTypes": ["major"]
-    },
-    {
-      "enabled": false,
-      "matchDatasources": ["npm"],
-      "matchDepTypes": ["engines"]
-    },
-    {
-      "automerge": true,
-      "matchDatasources": ["npm"],
-      "matchPackageNames": ["@3846masa/configs"],
-      "schedule": ["at any time"],
-      "stabilityDays": 0
-    },
     {
       "commitMessageTopic": "Node.js",
       "major": false,
@@ -71,11 +66,8 @@
       "semanticCommitType": "chore"
     }
   ],
-  "postUpdateOptions": ["yarnDedupeHighest"],
   "rangeStrategy": "bump",
   "reviewers": ["3846masa"],
   "schedule": ["after 8:00 pm"],
-  "semanticCommitType": "chore",
-  "semanticCommits": "enabled",
   "timezone": "Asia/Tokyo"
 }
