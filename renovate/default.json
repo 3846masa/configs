@@ -4,8 +4,7 @@
     "automerge": true,
     "pinDigests": true,
     "semanticCommitScope": "github-actions",
-    "semanticCommitType": "ci",
-    "semanticCommits": "enabled"
+    "semanticCommitType": "ci"
   },
   "labels": ["dependencies"],
   "npm": {
@@ -52,7 +51,6 @@
     "postUpdateOptions": ["yarnDedupeHighest"],
     "semanticCommitScope": "npm",
     "semanticCommitType": "chore",
-    "semanticCommits": "enabled",
     "stabilityDays": 3
   },
   "packageRules": [
@@ -68,5 +66,7 @@
   "rangeStrategy": "bump",
   "reviewers": ["3846masa"],
   "schedule": ["after 8:00 pm"],
+  "semanticCommitType": "chore",
+  "semanticCommits": "enabled",
   "timezone": "Asia/Tokyo"
 }
