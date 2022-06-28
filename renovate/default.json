@@ -57,11 +57,10 @@
   },
   "packageRules": [
     {
-      "commitMessageTopic": "Node.js",
+      "groupName": "Node.js",
       "major": false,
       "matchDatasources": ["docker", "node"],
-      "matchPackageNames": ["node"],
-      "matchPackagePatterns": ["/node$"],
+      "matchPackagePatterns": ["^node$", "/node$"],
       "semanticCommitScope": "node",
       "semanticCommitType": "chore"
     }
