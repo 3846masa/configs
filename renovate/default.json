@@ -1,11 +1,5 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "github-actions": {
-    "automerge": true,
-    "pinDigests": true,
-    "semanticCommitScope": "github-actions",
-    "semanticCommitType": "ci"
-  },
   "labels": ["dependencies"],
   "npm": {
     "extends": ["group:monorepos"],
@@ -54,6 +48,13 @@
     "stabilityDays": 3
   },
   "packageRules": [
+    {
+      "automerge": true,
+      "matchManagers": ["github-actions"],
+      "pinDigests": true,
+      "semanticCommitScope": "github-actions",
+      "semanticCommitType": "ci"
+    },
     {
       "groupName": "Node.js",
       "major": false,
