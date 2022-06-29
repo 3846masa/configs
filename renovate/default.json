@@ -2,46 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "labels": ["dependencies"],
   "npm": {
-    "extends": ["group:monorepos"],
-    "packageRules": [
-      {
-        "matchDepTypes": ["dependencies"],
-        "semanticCommitScope": "npm",
-        "semanticCommitType": "fix"
-      },
-      {
-        "enabled": false,
-        "matchDepTypes": ["peerDependencies"]
-      },
-      {
-        "automerge": true,
-        "matchUpdateTypes": ["minor", "patch"]
-      },
-      {
-        "automerge": false,
-        "matchUpdateTypes": ["major"]
-      },
-      {
-        "automerge": true,
-        "matchPackagePrefixes": ["@types/"],
-        "stabilityDays": 0
-      },
-      {
-        "enabled": false,
-        "matchPackageNames": ["@types/node"],
-        "matchUpdateTypes": ["major"]
-      },
-      {
-        "enabled": false,
-        "matchDepTypes": ["engines"]
-      },
-      {
-        "automerge": true,
-        "matchPackageNames": ["@3846masa/configs"],
-        "schedule": ["at any time"],
-        "stabilityDays": 0
-      }
-    ]
+    "extends": ["group:monorepos"]
   },
   "packageRules": [
     {
@@ -57,6 +18,51 @@
       "semanticCommitScope": "npm",
       "semanticCommitType": "chore",
       "stabilityDays": 3
+    },
+    {
+      "matchDepTypes": ["dependencies"],
+      "matchManagers": ["npm"],
+      "semanticCommitScope": "npm",
+      "semanticCommitType": "fix"
+    },
+    {
+      "enabled": false,
+      "matchDepTypes": ["peerDependencies"],
+      "matchManagers": ["npm"]
+    },
+    {
+      "automerge": true,
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch"]
+    },
+    {
+      "automerge": false,
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "automerge": true,
+      "matchManagers": ["npm"],
+      "matchPackagePrefixes": ["@types/"],
+      "stabilityDays": 0
+    },
+    {
+      "enabled": false,
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@types/node"],
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "enabled": false,
+      "matchDepTypes": ["engines"],
+      "matchManagers": ["npm"]
+    },
+    {
+      "automerge": true,
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@3846masa/configs"],
+      "schedule": ["at any time"],
+      "stabilityDays": 0
     },
     {
       "groupName": "Node.js",
