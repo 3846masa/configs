@@ -1,7 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "labels": ["dependencies"],
   "packageRules": [
+    {
+      "labels": ["dependencies"],
+      "matchPackagePatterns": ["*"],
+      "rangeStrategy": "bump",
+      "reviewers": ["3846masa"],
+      "schedule": ["after 8:00 pm"],
+      "semanticCommitType": "chore",
+      "semanticCommits": "enabled"
+    },
     {
       "automerge": true,
       "matchManagers": ["github-actions"],
@@ -74,10 +82,5 @@
       "semanticCommitType": "chore"
     }
   ],
-  "rangeStrategy": "bump",
-  "reviewers": ["3846masa"],
-  "schedule": ["after 8:00 pm"],
-  "semanticCommitType": "chore",
-  "semanticCommits": "enabled",
   "timezone": "Asia/Tokyo"
 }
