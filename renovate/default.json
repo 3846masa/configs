@@ -41,11 +41,7 @@
         "schedule": ["at any time"],
         "stabilityDays": 0
       }
-    ],
-    "postUpdateOptions": ["yarnDedupeHighest"],
-    "semanticCommitScope": "npm",
-    "semanticCommitType": "chore",
-    "stabilityDays": 3
+    ]
   },
   "packageRules": [
     {
@@ -54,6 +50,13 @@
       "pinDigests": true,
       "semanticCommitScope": "github-actions",
       "semanticCommitType": "ci"
+    },
+    {
+      "matchManagers": ["npm"],
+      "postUpdateOptions": ["yarnDedupeHighest"],
+      "semanticCommitScope": "npm",
+      "semanticCommitType": "chore",
+      "stabilityDays": 3
     },
     {
       "groupName": "Node.js",
