@@ -76,7 +76,6 @@
     {
       "groupName": "Node.js",
       "major": false,
-      "matchDatasources": ["docker", "node"],
       "matchPackagePatterns": ["^node$", "/node$"],
       "semanticCommitScope": "node",
       "semanticCommitType": "chore"
