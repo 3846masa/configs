@@ -1,9 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "labels": ["dependencies"],
-  "npm": {
-    "extends": ["group:monorepos"]
-  },
   "packageRules": [
     {
       "automerge": true,
@@ -18,6 +15,10 @@
       "semanticCommitScope": "npm",
       "semanticCommitType": "chore",
       "stabilityDays": 3
+    },
+    {
+      "extends": ["group:monorepos"],
+      "matchManagers": ["npm"]
     },
     {
       "matchDepTypes": ["dependencies"],
