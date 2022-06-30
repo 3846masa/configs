@@ -75,16 +75,15 @@
       "stabilityDays": 0
     },
     {
+      "extends": [":disableMajorUpdates"],
       "groupName": "Node.js",
-      "major": false,
       "matchManagers": ["nvm", "nodenv"],
       "semanticCommitScope": "node",
       "semanticCommitType": "chore"
     },
     {
-      "extends": ["group:nodeJs"],
+      "extends": ["group:nodeJs", ":disableMajorUpdates"],
       "groupName": "Node.js",
-      "major": false,
       "semanticCommitScope": "node",
       "semanticCommitType": "chore"
     }
