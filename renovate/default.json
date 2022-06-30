@@ -77,15 +77,16 @@
     {
       "extends": [":disableMajorUpdates"],
       "groupName": "Node.js",
-      "matchManagers": ["nvm", "nodenv"],
       "semanticCommitScope": "node",
       "semanticCommitType": "chore"
     },
     {
-      "extends": ["group:nodeJs", ":disableMajorUpdates"],
       "groupName": "Node.js",
-      "semanticCommitScope": "node",
-      "semanticCommitType": "chore"
+      "matchManagers": ["nvm", "nodenv"]
+    },
+    {
+      "extends": ["group:nodeJs"],
+      "groupName": "Node.js"
     }
   ],
   "printConfig": true,
