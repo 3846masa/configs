@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "dependencyDashboard": true,
   "packageRules": [
     {
       "labels": ["dependencies"],
@@ -76,10 +77,18 @@
     {
       "groupName": "Node.js",
       "major": false,
-      "matchPackagePatterns": ["^node$", "/node$"],
       "semanticCommitScope": "node",
       "semanticCommitType": "chore"
+    },
+    {
+      "groupName": "Node.js",
+      "matchManagers": ["nvm", "nodenv"]
+    },
+    {
+      "extends": ["group:nodeJs"],
+      "groupName": "Node.js"
     }
   ],
+  "printConfig": true,
   "timezone": "Asia/Tokyo"
 }
