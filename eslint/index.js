@@ -24,6 +24,7 @@ module.exports = {
         argsIgnorePattern: '^_',
       },
     ],
+    '@typescript-eslint/no-var-requires': ['off'],
     eqeqeq: ['error', 'always', { null: 'never' }],
     'import/no-named-as-default': ['off'],
     'import/no-named-as-default-member': ['off'],
