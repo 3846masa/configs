@@ -789,10 +789,10 @@ eslint-plugin-import@2.27.5:
     semver "^6.3.0"
     tsconfig-paths "^3.14.1"
 
-eslint-plugin-sort@2.7.1:
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-sort/-/eslint-plugin-sort-2.7.1.tgz#e051a76bbc943729d1aa18ba6ce8316d40984f05"
-  integrity sha512-vak5TQKfba+0LPYu8R2+AakzXAIcsOVAJC1U5MdZk7eWkkQ5zgEnHxPbQWvr2vO8opIZFjX+aAcUYTkO7hmFxg==
+eslint-plugin-sort@2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-sort/-/eslint-plugin-sort-2.9.0.tgz#6363ac9ba1c81637a97347a8a053000c2b6dd644"
+  integrity sha512-oNEiTVCalmtsBir8muzh/xV0on8j3FxR0QxBPxJE2yv/CH+JizbmkPeEsi7/3Js1HPJFkgZX17kHjOZ6rLAjKQ==
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.54.1"
     isomorphic-resolve "^1.0.0"
