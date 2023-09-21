@@ -13,7 +13,7 @@
     "@tsconfig/strictest": "2.0.2",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
-    "better-typescript-lib": "2.4.0",
+    "better-typescript-lib": "2.5.0",
     "eslint": "8.49.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-import-resolver-typescript": "3.6.0",
