@@ -1,6 +1,6 @@
 {
   "name": "@3846masa/configs",
-  "version": "1.0.270",
+  "version": "1.0.271",
   "private": true,
   "license": "MIT",
   "prettier": "./prettier",
