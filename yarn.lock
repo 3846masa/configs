@@ -138,7 +138,7 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
 
-"@types/prettier@2.7.3", "@types/prettier@^2.7.2":
+"@types/prettier@2.7.3":
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.3.tgz#3e51a17e291d01d17d3fc61422015a933af7a08f"
   integrity sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==
@@ -1759,12 +1759,10 @@ prettier-plugin-packagejson@2.4.9:
     sort-package-json "2.6.0"
     synckit "0.9.0"
 
-prettier-plugin-sort-json@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-sort-json/-/prettier-plugin-sort-json-1.0.0.tgz#fe677d5537b6d79d12ffaf1604046a3d3ee2427c"
-  integrity sha512-XgcaF/Sojax1vD6j53wNIByx0rp7ecang+A8W0eM+Ks3yBFu/qXjJNvUtC1lEWeYbNfmRs/d8FyYJCYozAVENw==
-  dependencies:
-    "@types/prettier" "^2.7.2"
+prettier-plugin-sort-json@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-sort-json/-/prettier-plugin-sort-json-3.1.0.tgz#a54b33a4ac36ac6f9bf31ad7b81106fad161e6ba"
+  integrity sha512-eIDEUjwzekiVd+oKrpd0aoACBTp5zOW71wDTNy+qQ5C9Q8oqt9n9wCm4F+SeRZbXfgblh/WYIguJynImlBXrvQ==
 
 prettier@3.1.1:
   version "3.1.1"
