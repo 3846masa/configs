@@ -36,14 +36,14 @@ dependencies:
     specifier: 50.0.1
     version: 50.0.1(eslint@8.56.0)
   prettier:
-    specifier: 3.2.1
-    version: 3.2.1
+    specifier: 3.2.2
+    version: 3.2.2
   prettier-plugin-packagejson:
     specifier: 2.4.9
-    version: 2.4.9(prettier@3.2.1)
+    version: 2.4.9(prettier@3.2.2)
   prettier-plugin-sort-json:
     specifier: 3.1.0
-    version: 3.1.0(prettier@3.2.1)
+    version: 3.1.0(prettier@3.2.2)
   typescript:
     specifier: 5.3.3
     version: 5.3.3
@@ -1988,7 +1988,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /prettier-plugin-packagejson@2.4.9(prettier@3.2.1):
+  /prettier-plugin-packagejson@2.4.9(prettier@3.2.2):
     resolution: {integrity: sha512-b3Q7agXVqxK3UpYEJr0xLD51SxriYXESWUCjmxOBUGqnPFZOg9jZGZ+Ptzq252I6OqzXN2rj1tJIFq6KOGLLJw==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -1996,22 +1996,22 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 3.2.1
+      prettier: 3.2.2
       sort-package-json: 2.6.0
       synckit: 0.9.0
     dev: false
 
-  /prettier-plugin-sort-json@3.1.0(prettier@3.2.1):
+  /prettier-plugin-sort-json@3.1.0(prettier@3.2.2):
     resolution: {integrity: sha512-eIDEUjwzekiVd+oKrpd0aoACBTp5zOW71wDTNy+qQ5C9Q8oqt9n9wCm4F+SeRZbXfgblh/WYIguJynImlBXrvQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
-      prettier: 3.2.1
+      prettier: 3.2.2
     dev: false
 
-  /prettier@3.2.1:
-    resolution: {integrity: sha512-qSUWshj1IobVbKc226Gw2pync27t0Kf0EdufZa9j7uBSJay1CC+B3K5lAAZoqgX3ASiKuWsk6OmzKRetXNObWg==}
+  /prettier@3.2.2:
+    resolution: {integrity: sha512-HTByuKZzw7utPiDO523Tt2pLtEyK7OibUD9suEJQrPUCYQqrHr74GGX6VidMrovbf/I50mPqr8j/II6oBAuc5A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: false
