@@ -6,6 +6,7 @@ module.exports = {
       files: ['package.json'],
       options: {
         plugins: [require.resolve('prettier-plugin-packagejson')],
+        trailingComma: 'none',
       },
     },
     {
@@ -14,6 +15,7 @@ module.exports = {
       options: {
         jsonRecursiveSort: true,
         plugins: [require.resolve('prettier-plugin-sort-json')],
+        trailingComma: 'none',
       },
     },
   ],
