@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tsconfig/strictest':
-    specifier: 2.0.2
-    version: 2.0.2
+    specifier: 2.0.3
+    version: 2.0.3
   '@typescript-eslint/eslint-plugin':
     specifier: 6.21.0
     version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
@@ -296,8 +296,8 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dev: false
 
-  /@tsconfig/strictest@2.0.2:
-    resolution: {integrity: sha512-jt4jIsWKvUvuY6adJnQJlb/UR7DdjC8CjHI/OaSQruj2yX9/K6+KOvDt/vD6udqos/FUk5Op66CvYT7TBLYO5Q==}
+  /@tsconfig/strictest@2.0.3:
+    resolution: {integrity: sha512-MroLvRhMbqtXI5WBSwoomro6OQS4xnCoudUrMb20JO0vLKUs0bAaCEcvM/immEBSJjFAK1l6jW1oAO8q3Ancrg==}
     dev: false
 
   /@types/eslint@8.56.2:
