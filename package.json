@@ -26,7 +26,7 @@
     "typescript": "5.4.2"
   },
   "devDependencies": {
-    "@types/eslint": "8.56.5",
+    "@types/eslint": "8.56.6",
     "@types/prettier": "2.7.3"
   },
   "packageManager": "pnpm@8.15.4"
