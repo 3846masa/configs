@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/eslint": "8.56.6",
-    "@types/prettier": "2.7.3"
+    "@types/prettier": "3.0.0"
   },
   "packageManager": "pnpm@8.15.4"
 }
