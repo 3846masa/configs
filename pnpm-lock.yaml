@@ -30,8 +30,8 @@ dependencies:
     specifier: 2.29.1
     version: 2.29.1(@typescript-eslint/parser@7.3.1)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
   eslint-plugin-sort:
-    specifier: 2.11.0
-    version: 2.11.0(eslint@8.57.0)(typescript@5.4.3)
+    specifier: 2.12.0
+    version: 2.12.0(eslint@8.57.0)(typescript@5.4.3)
   eslint-plugin-unicorn:
     specifier: 51.0.1
     version: 51.0.1(eslint@8.57.0)
@@ -1097,8 +1097,8 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-sort@2.11.0(eslint@8.57.0)(typescript@5.4.3):
-    resolution: {integrity: sha512-Rvt4XZI42KfyBvjvtcoKFEWg6L/nAKfMBagxKwipNfQd6zetwyHgh284XC1rlRzxY7scn0yfKgqdMILQIyKdlA==}
+  /eslint-plugin-sort@2.12.0(eslint@8.57.0)(typescript@5.4.3):
+    resolution: {integrity: sha512-xXcxmOe/sPytM/L0eEP3OUnNUuzjkFKMBCbs6FE+/QenE4qaIXRlIQMf/yOhGFXitZypdVvFAVzRwf9UqkuQog==}
     peerDependencies:
       eslint: '>=6'
     dependencies:
