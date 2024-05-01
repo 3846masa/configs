@@ -32,9 +32,11 @@ export default configs;
 ### Prettier
 
 ```js
-// prettier.config.js
-module.exports = {
-  ...require('@3846masa/configs/prettier'),
+// prettier.config.mjs
+import { config as sharedConfig } from '@3846masa/configs/prettier/config.mjs';
+
+export default {
+  ...sharedConfig,
 };
 ```
 
