@@ -13,7 +13,7 @@ yarn add --dev github:3846masa/configs
 ```json
 // tsconfig.json
 {
-  "extends": "@3846masa/configs/tsconfig.json"
+  "extends": "@3846masa/configs/typescript/tsconfig.json"
 }
 ```
 
