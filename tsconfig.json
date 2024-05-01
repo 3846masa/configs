@@ -1,3 +1,7 @@
 {
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "noEmit": true
+  },
   "extends": "@tsconfig/strictest/tsconfig.json"
 }

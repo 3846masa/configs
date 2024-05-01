@@ -20,10 +20,13 @@ yarn add --dev github:3846masa/configs
 ### ESLint
 
 ```js
-// .eslintrc.js
-module.exports = {
-  extends: [require.resolve('@3846masa/configs/eslint')],
-};
+// eslint.config.mjs
+import { configs as sharedConfigs } from '@3846masa/configs/eslint/config.mjs';
+
+/** @type {import('eslint').Linter.FlatConfig[]} */
+const configs = [...sharedConfigs];
+
+export default configs;
 ```
 
 ### Prettier
