@@ -3,10 +3,12 @@
   "version": "1.0.361",
   "private": true,
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "lint:eslint": "eslint . --max-warnings 0"
+    "lint": "pnpm --recursive run \"/^lint:.*/\"",
+    "lint:eslint": "eslint . --max-warnings 0",
+    "lint:prettier": "prettier --check ."
   },
-  "prettier": "./prettier",
   "dependencies": {
     "@eslint/js": "9.1.1",
     "@tsconfig/strictest": "2.0.5",

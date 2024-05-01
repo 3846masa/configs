@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
     "noEmit": true
   },
   "extends": "@tsconfig/strictest/tsconfig.json"

@@ -1,5 +1,9 @@
+import { createRequire } from 'node:module';
+
+const require = createRequire(import.meta.url);
+
 /** @type {import('prettier').Config} */
-module.exports = {
+export const config = {
   arrowParens: 'always',
   overrides: [
     {
