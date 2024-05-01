@@ -3,16 +3,13 @@
   "version": "1.0.360",
   "private": true,
   "license": "MIT",
-  "prettier": "./prettier",
-  "eslintConfig": {
-    "extends": [
-      "./eslint"
-    ]
+  "scripts": {
+    "lint:eslint": "eslint . --max-warnings 0"
   },
+  "prettier": "./prettier",
   "dependencies": {
+    "@eslint/js": "9.1.1",
     "@tsconfig/strictest": "2.0.5",
-    "@typescript-eslint/eslint-plugin": "7.7.1",
-    "@typescript-eslint/parser": "7.7.1",
     "better-typescript-lib": "2.7.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
@@ -20,13 +17,17 @@
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-sort": "3.0.2",
     "eslint-plugin-unicorn": "52.0.0",
+    "globals": "15.1.0",
     "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.5.0",
     "prettier-plugin-sort-json": "4.0.0",
-    "typescript": "5.4.5"
+    "typescript": "5.4.5",
+    "typescript-eslint": "7.8.0"
   },
   "devDependencies": {
     "@types/eslint": "8.56.10",
+    "@types/eslint__js": "8.42.3",
+    "@types/node": "18.19.31",
     "@types/prettier": "3.0.0"
   },
   "packageManager": "pnpm@9.0.6"
