@@ -20,7 +20,7 @@
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-sort": "3.0.2",
     "eslint-plugin-unicorn": "52.0.0",
-    "globals": "15.1.0",
+    "globals": "15.2.0",
     "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.5.0",
     "prettier-plugin-sort-json": "4.0.0",
