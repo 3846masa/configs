@@ -13,7 +13,7 @@
   "dependencies": {
     "@eslint/js": "9.7.0",
     "@tsconfig/strictest": "2.0.5",
-    "better-typescript-lib": "2.7.0",
+    "better-typescript-lib": "2.8.0",
     "eslint": "9.7.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-import-resolver-typescript": "3.6.1",
