@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/eslint": "9.6.1",
     "@types/eslint__js": "8.42.3",
-    "@types/node": "18.19.45",
+    "@types/node": "18.19.46",
     "@types/prettier": "3.0.0"
   },
   "packageManager": "pnpm@9.8.0"
