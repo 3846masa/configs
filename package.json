@@ -33,5 +33,5 @@
     "@types/node": "18.19.50",
     "@types/prettier": "3.0.0"
   },
-  "packageManager": "pnpm@9.9.0"
+  "packageManager": "pnpm@9.10.0"
 }
