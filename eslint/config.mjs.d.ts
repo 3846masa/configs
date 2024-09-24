@@ -1,1 +1,1 @@
-export const configs: import('eslint').Linter.FlatConfig[];
+export const configs: import('eslint').Linter.Config[];
