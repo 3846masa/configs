@@ -28,7 +28,6 @@
     "typescript-eslint": "8.7.0"
   },
   "devDependencies": {
-    "@types/eslint": "9.6.1",
     "@types/eslint__js": "8.42.3",
     "@types/node": "18.19.50"
   },

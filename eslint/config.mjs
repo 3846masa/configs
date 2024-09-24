@@ -6,7 +6,7 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export const configs = [
   {
     files: ['**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}'],
@@ -16,7 +16,7 @@ export const configs = [
         ...globals.worker,
         ...globals.commonjs,
       },
-      parser: /** @type {import('eslint').Linter.ParserModule} */ (tseslint.parser),
+      parser: /** @type {import('eslint').Linter.Parser} */ (tseslint.parser),
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
