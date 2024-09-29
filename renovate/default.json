@@ -22,7 +22,7 @@
     },
     {
       "matchManagers": ["npm"],
-      "postUpdateOptions": ["yarnDedupeHighest"],
+      "postUpdateOptions": ["pnpmDedupe"],
       "semanticCommitScope": "npm",
       "semanticCommitType": "chore",
       "stabilityDays": 3
@@ -54,14 +54,14 @@
     },
     {
       "automerge": true,
+      "matchDepNames": ["/^@types\\//"],
       "matchManagers": ["npm"],
-      "matchPackagePrefixes": ["@types/"],
       "stabilityDays": 0
     },
     {
       "enabled": false,
+      "matchDepNames": ["@types/node"],
       "matchManagers": ["npm"],
-      "matchPackageNames": ["@types/node"],
       "matchUpdateTypes": ["major"]
     },
     {
@@ -71,8 +71,8 @@
     },
     {
       "automerge": true,
+      "matchDepNames": ["@3846masa/configs"],
       "matchManagers": ["npm"],
-      "matchPackageNames": ["@3846masa/configs"],
       "schedule": ["at any time"],
       "stabilityDays": 0
     },
