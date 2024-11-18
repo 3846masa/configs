@@ -31,5 +31,5 @@
     "@types/eslint__js": "8.42.3",
     "@types/node": "18.19.64"
   },
-  "packageManager": "pnpm@9.13.0"
+  "packageManager": "pnpm@9.13.2"
 }
