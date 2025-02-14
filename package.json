@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@types/eslint__js": "8.42.3",
-    "@types/node": "18.19.75"
+    "@types/node": "18.19.76"
   },
   "packageManager": "pnpm@10.2.1"
 }
