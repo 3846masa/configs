@@ -22,7 +22,7 @@
     "eslint-plugin-unicorn": "56.0.1",
     "globals": "15.15.0",
     "prettier": "3.5.3",
-    "prettier-plugin-packagejson": "2.5.9",
+    "prettier-plugin-packagejson": "2.5.10",
     "prettier-plugin-sort-json": "4.1.1",
     "typescript": "5.8.2",
     "typescript-eslint": "8.25.0"
