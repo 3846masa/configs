@@ -15,7 +15,7 @@
     "@tsconfig/strictest": "2.0.5",
     "better-typescript-lib": "2.10.1",
     "eslint": "9.21.0",
-    "eslint-config-prettier": "10.0.2",
+    "eslint-config-prettier": "10.1.1",
     "eslint-import-resolver-typescript": "3.8.3",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-sort": "4.0.0",
