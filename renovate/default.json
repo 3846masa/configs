@@ -22,10 +22,10 @@
     },
     {
       "matchManagers": ["npm"],
+      "minimumReleaseAge": "3 days",
       "postUpdateOptions": ["pnpmDedupe"],
       "semanticCommitScope": "npm",
-      "semanticCommitType": "chore",
-      "stabilityDays": 3
+      "semanticCommitType": "chore"
     },
     {
       "extends": ["group:monorepos"],
@@ -56,7 +56,7 @@
       "automerge": true,
       "matchDepNames": ["/^@types\\//"],
       "matchManagers": ["npm"],
-      "stabilityDays": 0
+      "minimumReleaseAge": null
     },
     {
       "enabled": false,
@@ -73,8 +73,8 @@
       "automerge": true,
       "matchDepNames": ["@3846masa/configs"],
       "matchManagers": ["npm"],
-      "schedule": ["at any time"],
-      "stabilityDays": 0
+      "minimumReleaseAge": null,
+      "schedule": ["at any time"]
     },
     {
       "extends": [":disableMajorUpdates"],
