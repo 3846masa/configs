@@ -3,13 +3,13 @@
   "extends": ["github>3846masa/configs//renovate/default"],
   "npm": {
     "automerge": true,
+    "minimumReleaseAge": null,
     "packageRules": [
       {
         "matchDepTypes": ["dependencies"],
         "semanticCommitScope": "npm",
         "semanticCommitType": "chore"
       }
-    ],
-    "stabilityDays": 0
+    ]
   }
 }
