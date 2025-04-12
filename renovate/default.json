@@ -59,17 +59,6 @@
       "minimumReleaseAge": null
     },
     {
-      "enabled": false,
-      "matchDepNames": ["@types/node"],
-      "matchManagers": ["npm"],
-      "matchUpdateTypes": ["major"]
-    },
-    {
-      "enabled": false,
-      "matchDepTypes": ["engines"],
-      "matchManagers": ["npm"]
-    },
-    {
       "automerge": true,
       "matchDepNames": ["@3846masa/configs"],
       "matchManagers": ["npm"],
