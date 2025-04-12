@@ -45,7 +45,7 @@ export default {
 ```json
 // renovate.json
 {
-  "extends": ["github>3846masa/configs//renovate/default"]
+  "extends": ["github>3846masa/configs//renovate/default#{digest}"]
 }
 ```
 
