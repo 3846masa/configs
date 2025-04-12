@@ -1,5 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "@3846masa/configs",
+      "fileMatch": ["renovate.json"],
+      "matchStrings": ["\"github>3846masa/configs//renovate/default#(?<currentDigest>[a-z0-9]{7,40})\""]
+    }
+  ],
   "dependencyDashboard": true,
   "dependencyDashboardLabels": ["dependencies"],
   "extends": ["workarounds:all"],
@@ -61,7 +70,7 @@
     {
       "automerge": true,
       "matchDepNames": ["@3846masa/configs"],
-      "matchManagers": ["npm"],
+      "matchManagers": ["npm", "custom"],
       "minimumReleaseAge": null,
       "schedule": ["at any time"]
     },

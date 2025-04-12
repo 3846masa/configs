@@ -21,7 +21,7 @@ yarn add --dev github:3846masa/configs
 
 ```js
 // eslint.config.mjs
-import { configs as sharedConfigs } from '@3846masa/configs/eslint/config.mjs';
+import { configs as sharedConfigs } from '@3846masa/configs/eslint';
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 const configs = [...sharedConfigs];
@@ -33,7 +33,7 @@ export default configs;
 
 ```js
 // prettier.config.mjs
-import { config as sharedConfig } from '@3846masa/configs/prettier/config.mjs';
+import { config as sharedConfig } from '@3846masa/configs/prettier';
 
 export default {
   ...sharedConfig,
@@ -45,7 +45,7 @@ export default {
 ```json
 // renovate.json
 {
-  "extends": ["github>3846masa/configs//renovate/default"]
+  "extends": ["github>3846masa/configs//renovate/default#{digest}"]
 }
 ```
 
