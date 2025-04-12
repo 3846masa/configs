@@ -77,7 +77,7 @@
       "schedule": ["at any time"]
     },
     {
-      "extends": [":disableMajorUpdates"],
+      "allowedVersions": "^20.0.0",
       "groupName": "Node.js",
       "groupSlug": "node",
       "matchManagers": ["nvm", "nodenv"],
@@ -85,6 +85,7 @@
       "semanticCommitType": "chore"
     },
     {
+      "allowedVersions": "^20.0.0",
       "extends": ["group:nodeJs"],
       "groupName": "Node.js",
       "groupSlug": "node",
