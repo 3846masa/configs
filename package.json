@@ -12,7 +12,9 @@
     "./prettier": {
       "import": "./prettier/config.mjs",
       "types": "./prettier/config.d.ts"
-    }
+    },
+    "./renovate/*": "./renovate/*",
+    "./typescript/*": "./typescript/*"
   },
   "scripts": {
     "lint": "pnpm --recursive run \"/^lint:.*/\"",
