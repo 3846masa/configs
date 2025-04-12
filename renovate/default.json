@@ -67,6 +67,11 @@
     },
     {
       "allowedVersions": "^20.0.0",
+      "matchDepNames": ["@types/node"],
+      "matchManagers": ["npm"]
+    },
+    {
+      "allowedVersions": "^20.0.0",
       "groupName": "Node.js",
       "groupSlug": "node",
       "matchManagers": ["nvm", "nodenv"],
