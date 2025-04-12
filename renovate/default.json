@@ -4,9 +4,9 @@
     {
       "customType": "regex",
       "datasourceTemplate": "github-tags",
-      "depNameTemplate": "@3846masa/configs",
       "fileMatch": ["renovate.json"],
-      "matchStrings": ["\"github>3846masa/configs//renovate/default#(?<currentDigest>[a-z0-9]{7,40})\""]
+      "matchStrings": ["\"github>3846masa/configs//renovate/default#(?<currentDigest>[a-z0-9]{7,40})\""],
+      "packageNameTemplate": "3846masa/configs"
     }
   ],
   "dependencyDashboard": true,
@@ -69,8 +69,8 @@
     },
     {
       "automerge": true,
-      "matchDepNames": ["@3846masa/configs"],
       "matchManagers": ["npm", "custom"],
+      "matchPackageNames": ["3846masa/configs"],
       "minimumReleaseAge": null,
       "schedule": ["at any time"]
     },
