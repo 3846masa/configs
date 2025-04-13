@@ -94,6 +94,11 @@
       "groupSlug": "node",
       "semanticCommitScope": "node",
       "semanticCommitType": "chore"
+    },
+    {
+      "enabled": false,
+      "matchDepTypes": ["engines"],
+      "matchManagers": ["npm"]
     }
   ],
   "printConfig": true,
