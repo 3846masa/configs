@@ -31,7 +31,7 @@
     "eslint-import-resolver-typescript": "4.3.4",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-sort": "4.0.0",
-    "eslint-plugin-unicorn": "59.0.0",
+    "eslint-plugin-unicorn": "59.0.1",
     "globals": "16.0.0",
     "prettier": "3.5.3",
     "prettier-plugin-packagejson": "2.5.10",
