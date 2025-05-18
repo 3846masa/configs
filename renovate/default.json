@@ -69,18 +69,20 @@
     },
     {
       "automerge": true,
-      "matchManagers": ["npm", "custom"],
+      "matchManagers": ["npm", "custom.regex"],
       "matchPackageNames": ["3846masa/configs"],
       "minimumReleaseAge": null,
       "schedule": ["at any time"]
     },
     {
       "allowedVersions": "^20.0.0",
+      "automerge": true,
       "matchDepNames": ["@types/node"],
       "matchManagers": ["npm"]
     },
     {
       "allowedVersions": "^20.0.0",
+      "automerge": true,
       "groupName": "Node.js",
       "groupSlug": "node",
       "matchManagers": ["nvm", "nodenv"],
@@ -89,6 +91,7 @@
     },
     {
       "allowedVersions": "^20.0.0",
+      "automerge": true,
       "extends": ["group:nodeJs"],
       "groupName": "Node.js",
       "groupSlug": "node",
