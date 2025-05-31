@@ -40,7 +40,7 @@
     "typescript-eslint": "8.32.1"
   },
   "devDependencies": {
-    "@types/node": "20.17.55"
+    "@types/node": "20.17.57"
   },
   "packageManager": "pnpm@10.11.0"
 }
