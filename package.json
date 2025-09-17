@@ -37,7 +37,7 @@
     "prettier-plugin-packagejson": "2.5.19",
     "prettier-plugin-sort-json": "4.1.1",
     "typescript": "5.9.2",
-    "typescript-eslint": "8.42.0"
+    "typescript-eslint": "8.43.0"
   },
   "devDependencies": {
     "@types/node": "20.19.16"
