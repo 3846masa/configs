@@ -42,5 +42,5 @@
   "devDependencies": {
     "@types/node": "20.19.30"
   },
-  "packageManager": "pnpm@10.28.0"
+  "packageManager": "pnpm@10.28.1"
 }
