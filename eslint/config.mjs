@@ -1,6 +1,6 @@
 import eslint from '@eslint/js';
 import * as eslintConfigPrettier from 'eslint-config-prettier';
-import eslintPluginImport from 'eslint-plugin-import';
+import eslintPluginImportX from 'eslint-plugin-import-x';
 import eslintPluginSort from 'eslint-plugin-sort';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
@@ -28,7 +28,7 @@ export const configs = [
     },
     plugins: {
       '@typescript-eslint': /** @type {import('eslint').ESLint.Plugin} */ (tseslint.plugin),
-      import: eslintPluginImport,
+      'import-x': eslintPluginImportX,
       sort: eslintPluginSort,
       unicorn: eslintPluginUnicorn,
     },
@@ -36,7 +36,8 @@ export const configs = [
       ...eslint.configs.recommended.rules,
       ...tseslint.configs.strictTypeChecked.at(-1)?.rules,
       ...eslintConfigPrettier.rules,
-      ...eslintPluginImport.configs.recommended.rules,
+      ...eslintPluginImportX.configs.recommended.rules,
+      ...eslintPluginImportX.configs.typescript.rules,
       ...eslintPluginSort.configs.recommended.rules,
       '@typescript-eslint/consistent-type-imports': [
         'error',
@@ -53,9 +54,9 @@ export const configs = [
       ],
       '@typescript-eslint/no-var-requires': ['off'],
       eqeqeq: ['error', 'always', { null: 'never' }],
-      'import/no-named-as-default': ['off'],
-      'import/no-named-as-default-member': ['off'],
-      'import/order': [
+      'import-x/no-named-as-default': ['off'],
+      'import-x/no-named-as-default-member': ['off'],
+      'import-x/order': [
         'error',
         {
           alphabetize: {
@@ -70,11 +71,11 @@ export const configs = [
       'unicorn/prefer-node-protocol': ['error'],
     },
     settings: {
-      'import/parsers': {
+      'import-x/parsers': {
         '@typescript-eslint/parser': ['.ts', '.cts', '.mts', '.tsx'],
         espree: ['.js', '.cjs', '.mjs', '.jsx'],
       },
-      'import/resolver': {
+      'import-x/resolver': {
         typescript: {
           conditionNames: ['node', 'require', 'import', 'default'],
         },
