@@ -12,8 +12,8 @@ importers:
         specifier: 10.0.1
         version: 10.0.1(eslint@10.14.0)
       '@tsconfig/strictest':
-        specifier: 2.0.8
-        version: 2.0.8
+        specifier: 2.0.9
+        version: 2.0.9
       better-typescript-lib:
         specifier: 2.12.0
         version: 2.12.0(typescript@6.0.3)
@@ -242,8 +242,8 @@ packages:
   '@rtsao/scc@1.1.0':
     resolution: {integrity: sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==}
 
-  '@tsconfig/strictest@2.0.8':
-    resolution: {integrity: sha512-XnQ7vNz5HRN0r88GYf1J9JJjqtZPiHt2woGJOo2dYqyHGGcd6OLGqSlBB6p1j9mpzja6Oe5BoPqWmeDx6X9rLw==}
+  '@tsconfig/strictest@2.0.9':
+    resolution: {integrity: sha512-CbwIySRXoGapLZYXqQHF15cg0wQImJa25Ynmubb7816vnHqTdQrmQlSbZxkJrrBusHLbF1kFbNVn8XtxmQ3EpQ==}
 
   '@tybys/wasm-util@0.10.2':
     resolution: {integrity: sha512-RoBvJ2X0wuKlWFIjrwffGw1IqZHKQqzIchKaadZZfnNpsAYp2mM0h36JtPCjNDAHGgYez/15uMBpfGwchhiMgg==}
@@ -1563,7 +1563,7 @@ snapshots:
   '@rtsao/scc@1.1.0':
     optional: true
 
-  '@tsconfig/strictest@2.0.8': {}
+  '@tsconfig/strictest@2.0.9': {}
 
   '@tybys/wasm-util@0.10.2':
     dependencies:
